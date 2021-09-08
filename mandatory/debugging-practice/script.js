@@ -79,10 +79,10 @@ function render() {
     changeBut.className = "btn btn-success";
     cell4.appendChild(changeBut);
     let readStatus = "";
-    if (myLibrary[i].check == false) {
-      readStatus = "No";
-    } else {
+    if (myLibrary[i].check == true) {
       readStatus = "Yes";
+    } else {
+      readStatus = "No";
     }
     changeBut.innerHTML = readStatus;
 
